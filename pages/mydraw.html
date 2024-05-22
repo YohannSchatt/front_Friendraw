@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="../assets/pinceau.ico" types="">
+        <link rel="stylesheet" href="../styles/normal.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/mydraw.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="left_header">
+                    <img class="img_header" src="../assets/palette.png"/>
+                    <div class="link-box">
+                        <h1 class="titre_header"  id="titre_header">Friendraw</h1>
+                    </div>
+                </div>
+                <div class="right_header" id="right_header">
+                </div>
+            </div>
+        </header>
+        <div class="principal">
+            <div class="menu">
+                <div class="choix">
+                    <p id="c1">Dessin</p>
+                </div>
+                <div class="choix">
+                    <p id="c2">Amis</p>
+                </div>
+                <div class="choix" id="SignalementChoice">
+                </div>
+                <div class="choix">
+                    <p id="c4">Paramètres</p>
+                </div>
+                <div class="choix">
+                    <p id="c_deco">Déconnexion</p>
+                </div>
+            </div>
+            <div class="affichage">
+                <div id="dessin" class="item">
+                    <div class="tete">
+                        <div class="left">
+                            <h1>Mes dessins</h1>
+                        </div>
+                        <div class="right">
+                            <button class="button_design" id='dessiner'><span>Dessiner</span></button>
+                        </div>
+                    </div>
+                    <div class="corps">
+                        <div id='liste_dessin'>
+
+                        </div>
+                    </div>
+                    <div id="overlay_supprimer">
+                        <div class="blocksupprimer">
+                            <p>Voulez vous vraiment le supprimer ?</p>
+                            <div class="supprimer_button_overlay">
+                                <button class="button_design supprimer" id="supprimer_confirmation"><span>Supprimer</span></button>
+                                <button class="button_design" id="annuler"><span>Annuler</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="amis" class="item">
+                    <h1>Mes amis</h1>
+                </div>
+                <div id="signalement" class="item">
+                    <h1>Les signalements</h1>
+                    <div id='liste_signalement'>
+
+                    </div>
+                </div>
+                <div id="param" class="item">
+                    <div class="headerParam">
+                        <h1>Paramètres</h1>
+                        <button class="button_design supprimer" id="delete_account"><span>Supprimer son compte</span></button>
+                    </div>
+                    <div class="eltParam">
+                        <div class="blocklog" id="divPseudo">
+                            <p><strong>Changer pseudo</strong></p>
+                            <div class="inputbox">
+                                <label class="label">Nouveau pseudo</label>
+                                <input required autocomplete="off" type="text" id="pseudo" class="input">
+                            </div>
+                            <div class="inputbox">
+                                <label class="label">Mot de passe</label>
+                                <input required autocomplete="off" type="text" id="mdp" class="input">
+                            </div>
+                            <div class="div_soumettre">
+                                <button class="button_design" id="newPseudo"><span>Enregistrer</span></button>
+                            </div>
+                        </div>
+                        <div class="blocklog" id="divPassword">
+                            <p><strong>Changer mot de passe</strong></p>
+                            <div class="inputbox">
+                                <label class="label">Mot de passe actuel</label>
+                                <input required autocomplete="off" type="text" id="oldMdp" class="input">
+                            </div>
+                            <div class="inputbox">
+                                <label class="label">Nouveau mot de passe </label>
+                                <input required autocomplete="off" type="text" id="newMdp" class="input">
+                            </div>
+                            <div class="inputbox">
+                                <label class="label">Confirmation nouveau mot de passe</label>
+                                <input required autocomplete="off" type="text" id="confirmMdp" class="input">
+                            </div>
+                            <div class="div_soumettre">
+                                <button class="button_design" id="envoieMdp"><span>Enregistrer</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overlay_delete_account">
+                        <div class="blocksupprimer">
+                            <p>Voulez vous vraiment supprimer votre compte ?</p>
+                            <div class="delete_account_button_overlay">
+                                <button class="button_design supprimer" id="delete_account_confirmation"><span>Supprimer</span></button>
+                                <button class="button_design" id="annuler_account_confirmation"><span>Annuler</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="link-box">
+                    <a class="underline-hover" id="FAQ" href="http://localhost:5500/pages/FAQ.html">FAQ</a>
+                </div>
+                <div class="link-box">
+                    <a class="underline-hover" id="A_propos" href="http://localhost:5500/pages/A_propos.html">A propos</a>
+                </div>
+                <div class="link-box">
+                    <a class="underline-hover" id="mail" href="mailto:yohann.schatt@gmail.com">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="../scripts/main.js"></script>
+        <script type="module" src="../scripts/mydraw.js"></script>
+    </body>
+</html>

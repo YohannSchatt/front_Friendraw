@@ -1,0 +1,332 @@
+*{
+    /* CSS HEX */
+  --vanilla: #f2f3aeff;
+  --flax: #edd382ff;
+  --sandy-brown: #fc9e4fff;
+  --giants-orange: #ff521bff;
+  --oxford-blue: #020122ff;
+}
+
+body {
+    overflow: hidden;
+}
+
+.principal {
+    display: flex;
+}
+
+.tete button {
+    padding-right: 40px;
+}
+
+.affichage{
+    width: 90%;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    height : 79vh;
+}
+
+.menu .choix > p {
+    position: center;
+    cursor: pointer;
+    justify-content:right;
+    transition: color 0.3s ease; /* Animation de transition pour la couleur du texte */
+    color:aliceblue;
+    margin-left: 12%;
+}
+
+.item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu p:hover {
+    color: #007bff; /* Changement de couleur du texte au survol */
+}
+
+.menu p:hover::after {
+    background-color: #007bff; /* Changement de couleur du soulignement au survol */
+}
+
+.menu{
+    background-color: rgb(66, 66, 66);
+    width: 20%;
+    height: 79vh;
+    position: relative;
+    display: block;
+}
+
+.menu p {
+    padding-left: 10%;
+}
+
+.tete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Facultatif : centre les éléments verticalement */
+}
+
+.tete button {
+  padding-right: 20px;
+}
+
+.button_design {
+  margin-left: auto;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66;
+  color: ghostwhite;
+ }
+ 
+.button_design span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+ 
+.button_design:hover span {
+  color: ghostwhite;
+}
+ 
+.button_design::before,
+.button_design::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+ 
+.button_design::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+ 
+.button_design:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark {
+    background-color: #2196F3;
+    box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  @keyframes checkAnim {
+    0% {
+      height: 0;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    animation: checkAnim 0.2s forwards;
+  }
+
+  .blocklog {
+    position: relative;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 28%;
+    margin: auto; /* Pour centrer la div horizontalement */
+    text-align: center; /* Pour centrer le contenu à l'intérieur de la div */
+    padding: 10px; /* Ajoutez un peu de marge intérieure pour plus d'espace */
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.input {
+    width: 80%;
+    max-width: 190px;
+    height: 44px;
+    background-color: #05060f3b;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+
+  .input:hover, .input:focus, .inputbox:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+  
+  .inputbox:hover .label, .input:focus {
+    color: #05060fc2;
+  }
+
+  .nom_item,.pseudo_item{
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 2px;
+    border-bottom: 2px solid var(--oxford-blue);
+  } 
+
+  .item_dessin {
+    display: flex;
+    width: 90%;
+    height: auto;
+  }
+
+  .item_right{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid black;
+    width: 90%;
+  }
+
+.image_user {
+    width: 30%;
+    height: 40%;
+}
+
+.item_DivButton,.item_DivLike{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Facultatif : centre les éléments verticalement */
+}
+
+.item_check{
+  display: flex;
+  justify-content:center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */  
+}
+
+#overlay_signalement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  z-index: 9999; /* Assurez-vous que l'overlay est au-dessus de tout */
+  display: none; /* Caché par défaut */
+  justify-content: center;
+  align-items: center;
+}
+
+.blockSignalement{
+  padding: 20px;
+  border-radius: 20px;
+  position: center;
+  flex-direction: center;
+  align-items: center; /* Centrer horizontalement */
+  width: 320px;
+  height: 200px;
+  background-color: #eee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre */
+}
+
+.signalement_button_overlay{
+  display: flex;
+}
+
+.supprimer{
+  background: var(--giants-orange);
+}
+
+#RaisonSignalement{
+  width: 250px;
+  height: 100px;
+}
+
+textarea {
+  width: 80%;
+  max-width: 250px;
+  height: 60px;
+  background-color: #05060f3b;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.inputbox {
+  display: flex;
+}
+
+.textarea:hover, .textarea:focus, .inputbox:hover .textarea {
+  outline: none;
+  border-color: #05060f;
+}
+
+.textarea:hover .label, .textarea:focus {
+  color: #05060fc2;
+}
+
+.red{
+  background: var(--giants-orange);
+}

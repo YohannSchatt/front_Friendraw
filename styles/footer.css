@@ -1,0 +1,83 @@
+*{
+    /* CSS HEX */
+  --vanilla: #f2f3aeff;
+  --flax: #edd382ff;
+  --sandy-brown: #fc9e4fff;
+  --giants-orange: #ff521bff;
+  --oxford-blue: #020122ff;
+  }
+
+footer {
+    width: 100%;
+    position:static;
+    bottom: 0; /* Place le footer en bas de la fenêtre du navigateur */
+    z-index: 1000;
+    height: 8vh;
+    background-color: var(--flax);
+}
+
+.footer {
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+a {
+    border: var(--oxford-blue);
+    text-decoration: none;
+    padding: 2px;
+    color: inherit;
+}
+
+#FAQ,#A_propos,#mail {
+    border: var(--oxford-blue);
+    flex: 1; /* Chaque élément prend une part égale de l'espace disponible */
+    text-align: center; /* Centre le texte horizontalement dans chaque élément */
+    display: inline-block;
+    position: relative;
+}
+
+#FAQ {
+    justify-content: left;
+}
+
+#A_propos{
+    justify-content: center;
+}
+
+#mail {
+    justify-content: right;
+}
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    color: var(--oxford-blue); /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    transition: color 0.3s ease; /* Animation de transition pour la couleur du texte */
+}
+
+.underline-hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Position du soulignement */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: transparent; /* Couleur du soulignement (transparent par défaut) */
+    transition: background-color 0.3s ease; /* Animation de transition pour la couleur du soulignement */
+}
+
+.underline-hover:hover {
+    color: #007bff; /* Changement de couleur du texte au survol */
+}
+
+.underline-hover:hover::after {
+    background-color: #007bff; /* Changement de couleur du soulignement au survol */
+}
+
+.link-box{
+    border-color: rgb(23, 22, 22);
+    display: inline-block;
+}

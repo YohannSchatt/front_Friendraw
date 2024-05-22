@@ -1,0 +1,52 @@
+body{
+    overflow-x: hidden;
+    height: 77vh;
+}
+
+.principal{
+    height: 79vh;
+}
+
+.welcome {
+    padding-top: 110px;
+    text-align: center;
+}
+
+.titre{
+    font-size: 48px;
+}
+
+.sous-titre {
+    font-size: 30px;
+}
+
+.description {
+    padding-left: 20px;
+    padding-top: 70px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.div_button_dessin{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+.button_dessin{
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 315px;
+    height: 80px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 150);
+}
+.button_dessin:hover{
+    background-color: rgb(230, 230, 44);
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    /* CSS HEX */
+  --vanilla: #f2f3aeff;
+  --flax: #edd382ff;
+  --sandy-brown: #fc9e4fff;
+  --giants-orange: #ff521bff;
+  --oxford-blue: #020122ff;
+  }
+
+body {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--vanilla);
+    color:var(--oxford-blue);
+    flex-direction: column;
+    max-height: 70vh; /* Pour s'assurer que le contenu remplit au moins l'écran */
+}
+
+.principal{
+    width: 100%;
+    flex: 1; /* Fait en sorte que le contenu principal occupe l'espace restant */
+}

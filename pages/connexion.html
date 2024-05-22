@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="../assets/pinceau.ico" types="">
+        <link rel="stylesheet" href="../styles/normal.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/connexion.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="left_header">
+                    <img class="img_header" src="../assets/palette.png"/>
+                    <div class="link-box">
+                        <h1 class="titre_header"  id="titre_header">Friendraw</h1>
+                    </div>
+                </div>
+                <div class="right_header" id="right_header">
+                </div>
+            </div>
+        </header>
+        <div class="principal">
+            <div class="blocklog">
+                <p>Page de connexion</p>
+                <form action="" method="get">
+                    <div class="inputbox">
+                        <label class="label">Adresse mail
+                            <input required="required" autocomplete="off" type="email" id="email" class="input">
+                        </label>
+                    </div>
+                    <div class="inputbox">
+                        <label class="label">Mot de passe
+                            <input required autocomplete="off" type="text" id="mdp" class="input">
+                        </label>
+                    </div>
+                    <div class="div_soumettre">
+                        <button class="soumettre" onclick="verif_user()"><span>Se connecter</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="link-box">
+                    <a class="underline-hover" id="FAQ" href="http://localhost:5500/pages/FAQ.html">FAQ</a>
+                </div>
+                <div class="link-box">
+                    <a class="underline-hover" id="A_propos" href="http://localhost:5500/pages/A_propos.html">A propos</a>
+                </div>
+                <div class="link-box">
+                    <a class="underline-hover" id="mail" href="mailto:yohann.schatt@gmail.com">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <script src="../scripts/connexion.js"></script>
+        <script type="module" src="../scripts/main.js"></script>
+    </body>
+</html>

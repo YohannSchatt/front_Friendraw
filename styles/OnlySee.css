@@ -1,0 +1,22 @@
+*{
+    /* CSS HEX */
+    --vanilla: #f2f3aeff;
+    --flax: #edd382ff;
+    --sandy-brown: #fc9e4fff;
+    --giants-orange: #ff521bff;
+    --oxford-blue: #020122ff;
+}
+  
+.zone_de_dessin {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+  
+canvas {
+  margin: 10px;
+  border: 2px solid var(--oxford-blue);
+  background-color: white;
+  width: 90%;
+  height: auto;
+}

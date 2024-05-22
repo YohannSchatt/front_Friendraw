@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="../assets/pinceau.ico" types="">
+        <link rel="stylesheet" href="../styles/normal.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/AllDraw.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="left_header">
+                    <img class="img_header" src="../assets/palette.png"/>
+                    <div class="link-box">
+                        <h1 class="titre_header"  id="titre_header">Friendraw</h1>>
+                    </div>
+                </div>
+                <div class="right_header" id="right_header">
+                </div>
+            </div>
+        </header>
+        <div class="principal">
+            <div class="menu">
+                <p><strong>Recherche</strong></p>
+                <div class="choix">
+                    <div class="inputbox">
+                        <label class="label">Pseudo</label>
+                        <input autocomplete="off" type="text" id="pseudo_input" class="input">
+                    </div>
+                </div>
+                <div class="choix">
+                    <div class="inputbox">
+                        <label class="label">Nom du dessin</label>
+                        <input autocomplete="off" type="text" id="nom_dessin_input" class="input">
+                    </div>
+                </div>
+                <div class="item_check" id="DivOnlyLike">
+                    <p>Seulement Like</p>
+                    <label class="checkbox-container">
+                        <input class="custom-checkbox" type="checkbox" id="OnlyLike">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>     
+                <div class="choix">
+                    <button class="button_design" id="Rechercher"><span>Rechercher</span></button>
+                </div>
+          
+            </div>
+            <div class="affichage">
+                <div id="dessin" class="item">
+                    <div class="tete">
+                        <div class="left">
+                            <h1>Tous les dessins</h1>
+                        </div>
+                    </div>
+                    <div class="corps">
+                        <div id='liste_dessin'>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay_signalement">
+            <div class="blockSignalement">
+                <p>Signaler</p>
+                <div class="inputbox">
+                    <label class="label">Raison</label>
+                    <textarea id="RaisonSignalement" required autocomplete="off" type="text" id="RaisonSignalement" placeholder="Tapez ici..."></textarea>
+                </div>
+                <div class="signalement_button_overlay">
+                    <button class="button_design red" id="EnvoyerSignalement"><span>Envoyer</span></button>
+                    <button class="button_design" id="annulerSignalement"><span>Annuler</span></button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="link-box">
+                    <a class="underline-hover" id="FAQ" href="http://localhost:5500/pages/FAQ.html">FAQ</a>
+                </div>
+                <div class="link-box">
+                    <a class="underline-hover" id="A_propos" href="http://localhost:5500/pages/A_propos.html">A propos</a>
+                </div>
+                <div class="link-box">
+                    <a class="underline-hover" id="mail" href="mailto:yohann.schatt@gmail.com">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="../scripts/main.js"></script>
+        <script type="module" src="../scripts/AllDraw.js"></script>
+    </body>
+</html>

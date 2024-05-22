@@ -1,0 +1,93 @@
+*{
+    /* CSS HEX */
+  --vanilla: #f2f3aeff;
+  --flax: #edd382ff;
+  --sandy-brown: #fc9e4fff;
+  --giants-orange: #ff521bff;
+  --oxford-blue: #020122ff;
+  }
+
+header{
+    width: 100%;
+    height: 13vh;
+    background-color: var(--flax);
+}
+
+.header{
+    
+    display: flex;
+    justify-content:space-between;
+}
+
+.img_header {
+    height: 30px;
+    width: 30px;
+    padding-top: 24px;
+}
+
+.left_header{
+    justify-content:left;
+    display: flex;
+    margin-left: 10px;
+}
+
+.right_header{
+    display: flex;
+    align-items: center;
+    justify-items:space-between;
+    margin-right: 20px;
+}
+
+.Button_CI{
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border-style:inherit;
+    padding: 3%;
+    width: 60%;
+    height: 50%;
+    background-color: var(--oxford-blue);
+    color:rgb(255, 255, 255);
+    transition: .3s ease;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.Button_CI:hover{
+    background-color: var(--giants-orange);
+}
+
+.titre_header {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    justify-content:right;
+    margin-right: 10px;
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    transition: color 0.3s ease; /* Animation de transition pour la couleur du texte */
+}
+
+.titre_header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Position du soulignement */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: transparent; /* Couleur du soulignement (transparent par défaut) */
+    transition: background-color 0.3s ease; /* Animation de transition pour la couleur du soulignement */
+}
+
+.titre_header:hover {
+    color: #007bff; /* Changement de couleur du texte au survol */
+}
+
+.titre_header:hover::after {
+    background-color: #007bff; /* Changement de couleur du soulignement au survol */
+}
+
+.link-box{
+    border-color: var(--oxford-blue);
+    display: inline-block;
+}
