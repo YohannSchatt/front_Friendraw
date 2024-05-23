@@ -4,10 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5500",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "start.sh"
+    "dev": "vite --port 5500"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
