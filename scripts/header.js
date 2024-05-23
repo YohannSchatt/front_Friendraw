@@ -7,7 +7,7 @@ export function header() {
     const menu = document.getElementById("right_header");
     const titre = document.getElementById("titre_header");
     titre.addEventListener('click', () => {
-        window.location.href=`${URL_FRONT}/index.htm`
+        window.location.href=`${URL_FRONT}/index.html`
     })
     verif.Logged
     .then(isLoggedIn => {
@@ -43,7 +43,7 @@ export function header() {
 };
 
 function connexion_click(){
-    window.location.href=`${URL_FRONT}/pages/connexion.html`;
+    window.location.assign(`${URL_FRONT}/pages/connexion.html`);
 }
 
 function inscription_click(){
