@@ -1,5 +1,5 @@
 const URL_FRONT= import.meta.env.VITE_URL_FRONT
-const URL_BACK= import.meta.env.VITE_URL_BACK
+const URL_BACK= import.meta.env.VITE_URL_BACK 
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('mdp');
