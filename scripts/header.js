@@ -43,7 +43,7 @@ export function header() {
 };
 
 function connexion_click(){
-    window.location.assign(`${URL_FRONT}/pages/connexion.html`);
+    window.location.href=(`/pages/connexion.html`);
 }
 
 function inscription_click(){
