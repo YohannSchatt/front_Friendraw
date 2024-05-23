@@ -13,7 +13,7 @@ function load() {
     if (window.location.href === `${URL_FRONT}/pages/AllDraw.html`) {
         AllDraw();
     }
-    if (window.location.href === `${URL_FRONT}/pages/index.html`){
+    if (window.location.href === `${URL_FRONT}/index.html`){
         index();
     }
 }
