@@ -7,7 +7,7 @@
     "dev": "vite --port 5500",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "dotenv -e .env npx serve ."
+    "start": "npx dotenv -e .env npx serve ."
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
