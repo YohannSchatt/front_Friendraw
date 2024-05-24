@@ -1,8 +1,12 @@
-import { load } from '../utils/main.js';
+import '../styles/inscription.css';
+import '../styles/normal.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
+import { load } from './main.js';
 load();
 
-const URL_FRONT= import.meta.env.VITE_URL_FRONT
-const URL_BACK= import.meta.env.VITE_URL_BACK 
+const URL_BACK= 'ffsfesfs'
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('mdp');

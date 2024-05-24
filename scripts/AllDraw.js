@@ -1,5 +1,10 @@
-import * as verif from '../utils/verif_connexion.js';
-import { load } from '../utils/main.js';
+import '../styles/A_propos.css';
+import '../styles/normal.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
+import * as verif from './verif_connexion.js';
+import { load } from './main.js';
 load();
 window.onload = function () {
     load();

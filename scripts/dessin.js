@@ -1,9 +1,11 @@
-import * as verif from '../utils/verif_connexion.js';
-import { load } from '../utils/main.js';
+import '../styles/dessin.css';
+import '../styles/normal.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
+import * as verif from './verif_connexion.js';
+import { load } from './main.js';
 load();
-
-
-const URL_BACK= import.meta.env.VITE_URL_BACK
 
 const canvas = document.getElementById("canvas"); //récupère le canvas
 const ctx = canvas.getContext("2d"); //défini comment on utilise le canvas

@@ -1,3 +1,8 @@
+import '../styles/index.css';
+import '../styles/normal.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
 import * as verif from './verif_connexion.js';
 import { header } from './header.js';
 window.onload = function () {

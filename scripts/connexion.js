@@ -1,7 +1,12 @@
-import { load } from '../utils/main.js';
+import '../styles/connexion.css';
+import '../styles/normal.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
+import { load } from './main.js';
 load();
 
-const URL_BACK= import.meta.env.VITE_URL_BACK
+const URL_BACK= 'fefe'
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('mdp');

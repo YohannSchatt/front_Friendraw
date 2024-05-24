@@ -1,6 +1,5 @@
-import * as verif from './verif_connexion.js';
 
-const URL_FRONT= import.meta.env.VITE_URL_FRONT
+import * as verif from './verif_connexion.js';
 
     // Modifier le menu en fonction du statut de connexion
 export function header() {

@@ -1,13 +1,17 @@
-import * as verif from '../utils/verif_connexion.js';
-import { load } from '../utils/main.js';
+import '../styles/mydraw.css';
+import '../styles/normal.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+
+import * as verif from './verif_connexion.js';
+import { load } from './main.js';
 load();
 window.onload = function () {
     load();
     index();
 };
 
-const URL_FRONT= import.meta.env.VITE_URL_FRONT
-const URL_BACK= import.meta.env.VITE_URL_BACK
+const URL_BACK= 'fsefsfsf'
 
 var elem_supprimer = null ;
 
@@ -24,7 +28,7 @@ function selectMenu(element){
 }
 
 export function mydraw() {
-    verif.isLogged
+    verif.Logged
     .then(IsLoggin => {
         if(IsLoggin) {
             currentMenu.classList.add('active');
@@ -45,7 +49,7 @@ export function mydraw() {
             document.getElementById('envoieMdp').addEventListener("click",changerMotDePasse)
             document.getElementById('newPseudo').addEventListener("click",changerPseudo)
             FoundDessin();
-            verif.isAdmin()
+            verif.Admin
             .then(IsAdmin => {
                 if (IsAdmin){
                     const p = document.createElement('p');
