@@ -24,62 +24,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/cercle.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/gomme.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/palette.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/rectangle.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/sauvegarde.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/seau.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/stylo.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
-        test: /\.png$/, // matchez uniquement les fichiers PNG
-        type: 'asset/resource', // utilisez le loader asset/resource pour traiter les fichiers PNG comme des ressources
-        generator: {
-          filename: 'images/trash.png', // définit le nom et le chemin de sortie des fichiers PNG
-        },
-      },
-      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
     },
@@ -169,6 +113,11 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'styles/OnlySee.css',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'assets', to: 'assets' },
+      ],
     }),
   ],
   resolve: {
