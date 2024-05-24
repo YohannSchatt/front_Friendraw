@@ -1,5 +1,3 @@
-
-
 const URL_BACK= import.meta.env.VITE_URL_BACK
 
 //Variable où on stock les deux promesses, ainsi cela permet de faire qu'une seule requête au lieu de plusieurs pour vérifier les informations de l'utilisateur sur une page

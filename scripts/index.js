@@ -1,7 +1,7 @@
-import * as verif from '../utils/verif_connexion.js';
-import { load } from '../utils/main.js';
+import * as verif from './verif_connexion.js';
+import { header } from './header.js';
 window.onload = function () {
-    load();
+    header();
     index();
 };
 
