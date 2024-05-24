@@ -14,7 +14,7 @@ module.exports = {
     inscription: './scripts/inscription.js',
     main: './scripts/main.js',
     mydraw: './scripts/mydraw.js',
-    OnlySee: './scripts/OnlySee.js',
+    OnlySee: './scripts/Onlysee.js',
     verif_connexion: './scripts/verif_connexion.js',
   },
   output: {
