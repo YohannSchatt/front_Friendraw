@@ -1,4 +1,6 @@
-const URL_FRONT= import.meta.env.VITE_URL_FRONT
+import { load } from '../utils/main.js';
+load();
+
 const URL_BACK= import.meta.env.VITE_URL_BACK
 
 const canvas = document.getElementById("canvas"); //récupère le canvas

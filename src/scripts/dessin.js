@@ -1,4 +1,7 @@
-import * as verif from './verif_connexion.js';
+import * as verif from '../utils/verif_connexion.js';
+import { load } from '../utils/main.js';
+load();
+
 
 const URL_BACK= import.meta.env.VITE_URL_BACK
 

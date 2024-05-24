@@ -1,3 +1,6 @@
+import { load } from '../utils/main.js';
+load();
+
 const URL_FRONT= import.meta.env.VITE_URL_FRONT
 const URL_BACK= import.meta.env.VITE_URL_BACK 
 

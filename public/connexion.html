@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../styles/normal.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/footer.css">
-        <link rel="stylesheet" href="../styles/dessin.css">
+        <link rel="stylesheet" href="../styles/connexion.css">
     </head>
     <body>
         <header>
@@ -22,8 +22,23 @@
             </div>
         </header>
         <div class="principal">
-            <div class = zone_de_dessin>
-                <canvas id="canvas" width="2000" height="1500"></canvas>
+            <div class="blocklog">
+                <p>Page de connexion</p>
+                <form action="" method="get">
+                    <div class="inputbox">
+                        <label class="label">Adresse mail
+                            <input required="required" autocomplete="off" type="email" id="email" class="input">
+                        </label>
+                    </div>
+                    <div class="inputbox">
+                        <label class="label">Mot de passe
+                            <input required autocomplete="off" type="text" id="mdp" class="input">
+                        </label>
+                    </div>
+                    <div class="div_soumettre">
+                        <button class="soumettre" id="soumettre"><span>Se connecter</span></button>
+                    </div>
+                </form>
             </div>
         </div>
         <footer>
@@ -39,7 +54,6 @@
                 </div>
             </div>
         </footer>
-        <script src="../scripts/Onlysee.js"></script>
-        <script type="module" src="../scripts/main.js"></script>
+        <script type="module" src="../src/scripts/connexion.js"></script>
     </body>
 </html>

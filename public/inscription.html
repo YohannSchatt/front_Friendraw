@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../styles/normal.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/footer.css">
-        <link rel="stylesheet" href="../styles/connexion.css">
+        <link rel="stylesheet" href="../styles/inscription.css">
     </head>
     <body>
         <header>
@@ -23,20 +23,22 @@
         </header>
         <div class="principal">
             <div class="blocklog">
-                <p>Page de connexion</p>
+                <p>Page d'inscription</p>
                 <form action="" method="get">
                     <div class="inputbox">
-                        <label class="label">Adresse mail
-                            <input required="required" autocomplete="off" type="email" id="email" class="input">
-                        </label>
+                        <label class="label">Adresse email</label>
+                        <input required="required" autocomplete="off" type="email" id="email" class="input">
                     </div>
                     <div class="inputbox">
-                        <label class="label">Mot de passe
-                            <input required autocomplete="off" type="text" id="mdp" class="input">
-                        </label>
+                        <label class="label">Pseudo</label>
+                        <input required autocomplete="off" type="text" id="pseudo" class="input">
+                    </div>
+                    <div class="inputbox">
+                        <label class="label">Mot de passe</label>
+                        <input required autocomplete="off" type="text" id="mdp" class="input">
                     </div>
                     <div class="div_soumettre">
-                        <button class="soumettre" id="soumettre"><span>Se connecter</span></button>
+                        <button class="soumettre" onclick="ajout_user()"><span>S'inscrire</span></button>
                     </div>
                 </form>
             </div>
@@ -54,7 +56,6 @@
                 </div>
             </div>
         </footer>
-        <script type="module" src="../scripts/connexion.js"></script>
-        <script type="module" src="../scripts/main.js"></script>
+        <script src="../src/scripts/inscription.js"></script>
     </body>
 </html>

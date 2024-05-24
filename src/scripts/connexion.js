@@ -1,3 +1,6 @@
+import { load } from '../utils/main.js';
+load();
+
 const URL_BACK= import.meta.env.VITE_URL_BACK
 
 const emailInput = document.getElementById('email');
