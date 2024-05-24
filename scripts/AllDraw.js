@@ -2,7 +2,7 @@ import * as verif from './verif_connexion.js';
 
 const URL_FRONT= import.meta.env.VITE_URL_FRONT
 const URL_BACK= import.meta.env.VITE_URL_BACK
-const URL_WS = import.meta.env.VITE_URL_WS
+const URL_WS = import.meta.env.VITE_URL_BACK;
 
 const dessin = document.getElementById("dessin");
 var eltASignaler = null;
@@ -33,6 +33,7 @@ export function AllDraw() {
 
     // Écoute des messages du serveur
     socket.onmessage = (event) => {
+        console.log("C'est ca ?");
         const data = JSON.parse(event.data)
         console.log(`like reçu`);
         if(data.type === 'updateLikes') {
@@ -359,7 +360,7 @@ function AnnulerSignalement(){
 
 function voirOnly(nom){
     localStorage.setItem('dessin_OnlySee',nom)
-    window.location.href=`${URL_FRONT}/pages/OnlySee.html`;
+    window.location.href=`${window.location.origin}/pages/OnlySee.html`;
 }
 
 function MAJLike(data){

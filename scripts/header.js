@@ -7,7 +7,7 @@ export function header() {
     const menu = document.getElementById("right_header");
     const titre = document.getElementById("titre_header");
     titre.addEventListener('click', () => {
-        window.location.href=`${URL_FRONT}/index.html`
+        window.location.href=`${window.location.origin}/index.html`
     })
     verif.Logged
     .then(isLoggedIn => {
@@ -43,17 +43,17 @@ export function header() {
 };
 
 function connexion_click(){
-    window.location.href=(`/pages/connexion.html`);
+    window.location.href=(`${window.location.origin}/pages/connexion.html`);
 }
 
 function inscription_click(){
-    window.location.href=`${URL_FRONT}/pages/inscription.html`;
+    window.location.href=`${window.location.origin}/pages/inscription.html`;
 }
 
 function myDraw_click(){
-    window.location.href=`${URL_FRONT}/pages/myDraw.html`;
+    window.location.href=`${window.location.origin}/pages/mydraw.html`;
 }
 
 function AllDraw_click(){
-    window.location.href=`${URL_FRONT}/pages/AllDraw.html`;
+    window.location.href=`${window.location.origin}/pages/AllDraw.html`;
 }

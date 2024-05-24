@@ -1,12 +1,14 @@
-const URL_FRONT= import.meta.env.VITE_URL_FRONT
 const URL_BACK= import.meta.env.VITE_URL_BACK
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('mdp');
-const submitButton = document.getElementById('Submit');
+const submitButton = document.getElementById('soumettre');
 
-function verif_user() {
+submitButton.addEventListener('click', verif_user);
+
+function verif_user(event) {
     event.preventDefault();
+    console.log("svhezrvhvjzh vjrv kerjvbzksh vkj vbvbajkvhzekjvbskvbsdv");
     fetch(`${URL_BACK}/user/connexion`, {
         method: 'POST',
         credentials:'include',
@@ -27,7 +29,7 @@ function verif_user() {
     .then(json => {
         if (json.success){
             localStorage.setItem('pseudo',json.pseudo);
-            window.location.href = `${URL_FRONT}/index.html`;
+            window.location.href = window.location.href.replace('/connexion.html', '/index.html');
         } else {
             alert('Erreur lors de la connexion à votre compte : Identifiant invalide');
         }

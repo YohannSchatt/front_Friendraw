@@ -28,7 +28,7 @@ function ajout_user(){
     })
     .then(message => {
         if (message.trim() === "success") {
-            window.location.href = `${URL_FRONT}/pages/connexion.html`;
+            window.location.href = `${window.location.origin}/pages/connexion.html`;
         } else {
             alert('Erreur lors de la création du compte : ' + message);
         }

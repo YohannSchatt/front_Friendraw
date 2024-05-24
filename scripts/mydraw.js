@@ -52,13 +52,13 @@ export function mydraw() {
             })
         }
         else {
-            alert("vous êtes déconnecté, veuillez vous reconnecter");
-            window.location.href=`${URL_FRONT}/index.html`
+            //alert("vous êtes déconnecté, veuillez vous reconnecter");
+            //window.location.href=`${window.location.origin}/index.html`
         } 
     })
     .catch(error => {
-        alert("vous êtes déconnecté, veuillez vous reconnecter");
-        window.location.href=`${URL_FRONT}/index.html`
+        //alert("vous êtes déconnecté, veuillez vous reconnecter");
+        //window.location.href=`${window.location.origin}/index.html`
     })
 }
 
@@ -80,7 +80,7 @@ function selectParam(){
 }
 
 function FoundDessin(){
-    fetch("${URL_BACK}/user/dessin", {
+    fetch(`${URL_BACK}/user/dessin`, {
         method: 'GET',
         credentials: 'include',
     })
@@ -365,12 +365,12 @@ function Putpublic(nom) {
 function modifierDessin(nom) {
     localStorage.setItem('save',true);
     localStorage.setItem('nomDessinModif',nom);
-    window.location.href=`${URL_FRONT}/pages/dessin.html`
+    window.location.href=`${window.location.origin}/pages/dessin.html`
 }
 
 function voirOnly(nom){
     localStorage.setItem('dessin_OnlySee',nom)
-    window.location.href=`${URL_FRONT}/pages/OnlySee.html`;
+    window.location.href=`${window.location.origin}/pages/OnlySee.html`;
 }
 
 function annuler(){
@@ -391,14 +391,15 @@ function deconnexion_click(){
         }
     })
     .then(data => {
+        console.log("mes fesses", data)
         if (!data.authorization) {
             alert("Erreur lors de la déconnexion");
         }
-        if (window.location.href === `${URL_FRONT}/pages/index.html`){
+        if (window.location.href === `${window.location.origin}/pages/index.html`){
             window.location.reload()
         }
         else{
-            window.location.href=`${URL_FRONT}/pages/index.html`
+            window.location.href=`${window.location.origin}/pages/index.html`
         }
     })
 }
@@ -406,7 +407,7 @@ function deconnexion_click(){
 function button_dessin(){
     localStorage.setItem('save', false)
     localStorage.setItem('nomDessinModif','')
-    window.location.href=`${URL_FRONT}/pages/dessin.html`
+    window.location.href=`${window.location.origin}/pages/dessin.html`
 }
 
 
@@ -518,7 +519,7 @@ function DeleteAccountConfirmation(){
         else {
             localStorage.clear();
             alert("Suppresion réussie, retour au menu principal");
-            window.location.href = `${URL_FRONT}/pages/index.html`;
+            window.location.href = `${window.location.origin}/pages/index.html`;
             
         }
     })
